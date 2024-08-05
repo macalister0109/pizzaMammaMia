@@ -1,7 +1,14 @@
 
-const Producto = () => {
+const Producto = ({title= 'Pizza Napolitana', price='13.400', tipo='Familiar'}) => {
+    
     return (
-        <h1>Producto</h1>
+        <>
+           <p>
+           {title} - Precio:{price} <span>Tipo: {tipo}</span>
+           </p>
+        </>
+        
+       
     );
 } 
 

@@ -1,13 +1,22 @@
-import { useState } from 'react'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import Producto from './components/Producto'
+import MyCard from './components/MyCard'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
-      <Producto />
+      <h1>Bienvenido a Mamma Mia</h1>
+      <MyCard 
+        image="https://cdn.papajohns.cl/pictures/pizzas/napolitana_1691158448.jpg" 
+        title="Pizza Napolitana" 
+        colorButton="success" 
+        textButton="Comprar"
+      />
+
+      
     </>
   )
 }
